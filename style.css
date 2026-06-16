@@ -60,7 +60,8 @@ body.light{
     --paper-warm:#eeeeee;
 
     --ink:#1f2937;
-    --ink-muted:#4b5563;
+    --ink-muted:#6b7280;
+    --ink-faint: #4b5563
 
     --rule:#d1d5db;
 }
