@@ -27,7 +27,7 @@ img,video,audio{
     --accent: #7c2bbe;
     --logo-accent:#eb328e;
     --accent-hover: #eb328e;
-    --accent-hover-light: white;
+    --accent-hover-light: #eb328e;
 
     /* Borders */
     --rule: #2a3441;
