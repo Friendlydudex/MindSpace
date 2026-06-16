@@ -27,7 +27,7 @@ img,video,audio{
     --accent: #7c2bbe;
     --logo-accent:#eb328e;
     --accent-hover: #eb328e;
-    --accent-hover-light: #eb328e;
+    --accent-hover-light: #e6edf3;
 
     /* Borders */
     --rule: #2a3441;
@@ -313,7 +313,7 @@ main{
 }
 
 .card:hover .read-more{
-    color: var(--accent-hover-light);
+    color: var(--accent-hover);
 }
 
 
