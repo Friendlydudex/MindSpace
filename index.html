@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+
+      <div class="header-brand">
+        <h1 class="logo">
+          <span>M</span>ind<span>S</span>pace
+        </h1>
+
+        <p class="subtitle">Articles written by people who think too much.</p>
+      </div>
+
+      <div class="header-actions">
+        <button class="new-user-article">Try to write something</button>
+        
+        <button id="theme-btn">☀</button>
+      </div>
+    </div>
+
+
+    <div class="header-secondary-actions">
+      <button id="reset-filters">Reset Filters</button>
+      <button id="language-btn">Persian</button>
+    </div>
+
+    <div class="filter-bar">
+      <select id="filter-category">
+        <option value="all">All Categories</option>
+      </select>
+      <select id="sort-select">
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+        <option value="az">A-Z</option>
+        <option value="za">Z-A</option>
+      </select>
+      <form id="search-form">
+        <input type="search" id="search-input" placeholder="Search articles...">
+      </form>
+    </div>
+    
+  </header>
+
+  <main>
+    <!-- This div is empty at first. JavaScript will fill it with article cards -->
+  <div id="articles-container"></div>
+    <aside id="writer-sidebar">
+      <h2>Writers</h2>
+    </aside>
+  </main>
+
+  <footer>
+    <p class="footer-quote">Trying to restore humanity, one article at a time</p>
+    <p class="footer-count">Articles shared: <span id="article-count">0</span></p>
+    <p class="footer-credit">Loosing-it LLC 2026</p>
+  </footer>
+
+    <!-- Modal introduction which is the little box that shows you the content of the article -->
+    <div class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close">X</button>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+    <!-- Modal for the user added articles -->
+     <div class="write-overlay">
+      <div class="write-box">
+        <button class="write-close">X</button>
+        <!-- User input area -->
+        <form class="write-form">
+          
+          <label for="input-title">Title</label>
+          <input type="text" id="input-title">
+          
+          <label for="input-author">Author</label>
+          <input type="text" id="input-author">
+          
+          <label for="input-category">Category</label>
+          <input type="text" id="input-category">
+
+          <label for="input-summary">Summary</label>
+          <textarea id="input-summary"></textarea>
+
+          <label for="input-media-type">Media Type</label>
+          <select id="input-media-type">
+            <option value="">None</option>
+            <option value="image">Image</option>
+            <option value="video">Video</option>
+            <option value="audio">Audio</option>
+          </select>
+
+          <label for="input-language">Article Language</label>
+          <select id="input-language">
+            <option value="en">English</option>
+            <option value="fa">Persian</option>
+          </select>
+
+
+          <label for="input-media-url">Media URL</label>
+          <input type="text" id="input-media-url">
+
+          <label for="input-content">Content</label>
+          <textarea id="input-content"></textarea>
+
+          <button type="submit" id="write-submit">Post</button>
+        </form>
+      </div>
+     </div>
+
+
+    <!-- Load the articles data first, then the script below -->
+  <script src="articles.js"></script>
+    <!-- Main logic of the index page -->
+  <script src="main-fixed.js"></script>
+</body>
+</html>
